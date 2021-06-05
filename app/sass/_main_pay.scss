@@ -1,0 +1,147 @@
+.main_pay {
+    .line_pay {
+        display: flex;
+        text-align: center;
+        padding-top: 15px;
+        .in_catalog {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $gray1;
+            text-decoration: none;
+            display: block;
+            padding-bottom: 32.5px;
+            padding-left: 14px;
+        }
+    }
+    .wrapper-pay {
+        .info-form {
+            display: flex;
+	        justify-content: space-between;
+            .total-pay {
+                h3 {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: $gray1;
+                    padding-bottom: 16px;
+                    padding-top: 5px;
+                }
+                h1 {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 37px;
+                    color: $gray1;
+                    padding-bottom: 33px;
+                }
+                p {
+                    padding-bottom: 6px;
+                } 
+                .way-pay {
+                    .label {
+                        position: relative;
+                        display: flex;
+                        margin-bottom: 20px;
+                        .input-text {
+                            position: relative;
+                            font-size: 16px;
+                            line-height: 19px;
+                            padding-left: 42px;
+                            height: 36px;
+                            display: flex;
+                            align-items: center;
+                            color: $gray2;
+                            cursor: pointer;
+                            &:hover::after {
+                                background-color: $gray5;
+                            }
+                            &::after {
+                                content: '';
+                                border: 2px solid $gray1;
+                                width: 32px;
+                                height: 32px;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                border-radius: 50%;
+                            }
+                            &::before {
+                                display: none;
+                                content: '';
+                                position: absolute;
+                                background-color: #5C0790;
+                                width: 14px;
+                                height: 14px;
+                                position: absolute;
+                                left: 9px;
+                                top: 9px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .input-radio:checked + .input-text::before {
+                            display: block;
+                        }
+                    }
+                } 
+                .way-method {
+                    padding-bottom: 7px;
+                    .label {
+                        position: relative;
+                        display: flex;
+                        margin-bottom: 20px;
+                        .input-text {
+                            position: relative;
+                            font-size: 16px;
+                            line-height: 19px;
+                            padding-left: 42px;
+                            height: 36px;
+                            display: flex;
+                            align-items: center;
+                            color: $gray2;
+                            cursor: pointer;
+                            &:hover::after {
+                                background-color: $gray5;
+                            }
+                            &::after {
+                                content: '';
+                                border: 2px solid $gray1;
+                                width: 32px;
+                                height: 32px;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                border-radius: 50%;
+                            }
+                            &::before {
+                                display: none;
+                                content: '';
+                                position: absolute;
+                                background-color: #5C0790;
+                                width: 14px;
+                                height: 14px;
+                                position: absolute;
+                                left: 9px;
+                                top: 9px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .input-radio:checked + .input-text::before {
+                            display: block;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .wrapper-pay {
+            flex-direction: column;
+            .info-form {
+                flex-direction: column;
+            }
+        }
+    }
+}  
